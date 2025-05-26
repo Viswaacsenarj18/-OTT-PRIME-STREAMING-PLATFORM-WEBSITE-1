@@ -1,0 +1,271 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('https://assets.gqindia.com/photos/64b8d24d8f837ce57057b1c0/16:9/w_2560%2Cc_limit/Netflix-ends-password-sharing_001.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: black;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-results {
+    position: absolute;
+    background: white;
+    color: black;
+    display: none;
+    width: 200px;
+}
+
+/* Login Button */
+.login-btn {
+    background: yellow;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 50px;
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Categories Section */
+.category {
+    padding: 20px;
+}
+
+/* Movie List Styling */
+.movie-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.movie-list img {
+    border-radius: 10px;
+    max-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.movie-list img:hover {
+    transform: scale(1.1);
+}
+.movie-list img {
+    width: 180px;       /* Set your desired width */
+    height: 270px;      /* Set your desired height */
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    margin: 5px;         /* Optional: space between images */
+}
+/* Splash Screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url();
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeOut 2s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.splash-logo {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: zoomIn 1s ease;
+}
+
+/* Animations */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f7;
+    color: red;
+  }
+  
+  .navbar {
+    background-color: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  nav a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    color: #ffc107;
+  }
+  
+  .search-container input {
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    width: 220px;
+  }
+  
+  .login-btn {
+    background-color: #ffc107;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .login-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Sports Cards */
+  .sports-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+  }
+  
+  .sport-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .sport-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .sport-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .sport-card h2 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+  }
+  
+  .sport-card p {
+    font-size: 14px;
+    padding: 0 15px 10px;
+    color: red;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ffc107;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sports-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sport-card {
+      width: 90%;
+    }
+  }
+  
